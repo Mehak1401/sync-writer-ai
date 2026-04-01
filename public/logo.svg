@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" fill="none">
+  <rect width="1200" height="1200" fill="#0f172a" rx="120"/>
+  <g transform="translate(300, 300)">
+    <!-- Book icon -->
+    <path d="M150 100 C100 80, 50 80, 0 100 L0 450 C50 430, 100 430, 150 450 L150 100 Z" fill="#3b82f6"/>
+    <path d="M450 100 C500 80, 550 80, 600 100 L600 450 C550 430, 500 430, 450 450 L450 100 Z" fill="#60a5fa"/>
+    <path d="M150 100 C200 120, 400 120, 450 100 L450 450 C400 470, 200 470, 150 450 L150 100 Z" fill="#1d4ed8"/>
+    <!-- AI sparkle/connection dots -->
+    <circle cx="300" cy="250" r="30" fill="#ffffff"/>
+    <circle cx="220" cy="180" r="15" fill="#93c5fd"/>
+    <circle cx="380" cy="180" r="15" fill="#93c5fd"/>
+    <circle cx="220" cy="320" r="15" fill="#93c5fd"/>
+    <circle cx="380" cy="320" r="15" fill="#93c5fd"/>
+  </g>
+</svg>
