@@ -1,6 +1,6 @@
 import { BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/integrations/supabase/client";
+import { lovable } from "@/integrations/lovable/index";
 import { useAuth } from "@/hooks/useAuth";
 import { Navigate } from "react-router-dom";
 import { useState } from "react";
@@ -14,14 +14,14 @@ const Auth = () => {
 
   const handleGoogleSignIn = async () => {
     setSigningIn(true);
-    const { error } = await supabase.auth.signInWithOAuth({
-      provider: "google",
-      options: {
-        redirectTo: window.location.origin,
-      },
+    const result = await lovable.auth.signInWithOAuth("google", {
+      redirect_uri: window.location.origin,
     });
-    if (error) {
+    if (result.error) {
       setSigningIn(false);
+    }
+    if (result.redirected) {
+      return;
     }
   };
 
