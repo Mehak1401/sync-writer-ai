@@ -84,7 +84,7 @@ const Editor = () => {
             <EditorPane content={content} onChange={setContent} />
           </div>
           <div className="w-[380px]">
-            <AICopilotPane />
+            <AICopilotPane content={content} title={paper.title} />
           </div>
         </div>
       </div>
